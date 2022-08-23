@@ -12,15 +12,16 @@ body{
 }
 .information_container{
     padding-left: 50px;
+    font-size: 24px;
 }
 #name_input, #firstname_input, #birth_input, #age_input, #adress_input, #adress_input, #number_input   {
     height: 20px;
     border-radius: 5px;
-    outline: none;  
+    outline: none; 
 }
 input{
     border: none;
-    background-color: antiquewhite
+    background-color: antiquewhite;
 }
 .name, .firstname, .birth, .age, .adress, .adress, .number {
     padding-top: 4px;
