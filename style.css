@@ -1,18 +1,33 @@
 body{
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 25px;
+    background-color: rgb(156, 153, 149);
 }
 .formulaire_container{
-    display: flex;
-    background-color: rgb(96, 87, 182);
+    background: linear-gradient(200deg, rgb(146, 118, 190) 0%, rgb(92, 30, 172) 50%, rgb(153, 32, 143) 100%);
     width: 800px; 
-    padding-left: 50px;
+    padding: auto;
     height: 350px; 
-    padding-top: 30px;
+    margin: auto;
+    margin-top: 250px;
+    border-radius: 20px;
+    padding-left: 50px;
+    padding-top: 25px;
+    overflow: auto;
 }
 .information_container{
     padding-left: 50px;
-    font-size: 24px;
+    font-size: 22px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    resize: horizontal;
+}
+@media screen and (max-width:780px) {
+    .information_container{
+    padding-left: 0%;
+    height: 100px;   
+}
 }
 #name_input, #firstname_input, #birth_input, #age_input, #adress_input, #adress_input, #number_input   {
     height: 20px;
@@ -40,18 +55,12 @@ p{
     color: rgb(192, 190, 55);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-.button_container{
-    margin-left: 100px; 
-    margin-top: 280px;
+.information1_container, .information_container {
+    display: inline-block;
 }
-button{
-    height: 30px;
-    width: 100px;
-    font-size: 18px;
-    font-family: sans-serif;
-    border-radius: 20px;
-    outline: none;
-    border: none;  
-    color: rgb(63, 23, 109);
-    background-color: antiquewhite;
+@media screen and (max-width: 780px) {
+    .information1_container, .information_container, .formulaire_container{
+        width: 100%;
+        height: 50vh;       
+    } 
 }
